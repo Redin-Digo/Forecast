@@ -24,7 +24,7 @@
         <div class="weather-body">
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-9">
+              <div class="col-6">
                 <input
                   type="search"
                   placeholder="Type in a city..."
@@ -33,7 +33,15 @@
                 />
               </div>
               <div class="col-3">
-                <input type="submit" value="Search" class="btn btn-dark w-70" />
+                <input type="submit" value="🔎 Search" class="btn btn-dark" />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="🔰 Current"
+                  id="current-location"
+                  class="btn btn-dark"
+                />
               </div>
             </div>
 
@@ -58,9 +66,9 @@
                 <strong id="temperature"></strong
                 ><span class="units"
                   ><a href="#" id="celsius-link" class="active">°C</a>
-                  |
-                  <a href="#" id="fahrenheit-link">°F</a></span
-                >
+
+                  <a href="#" id="fahrenheit-link"></a
+                ></span>
               </div>
             </div>
             <div class="col-md-6">
@@ -73,11 +81,11 @@
           <div class="weather-forecast" id="forecast">
             <div class="row">
               <div class="col-2">
-                <div class="weather-forecast-date">Thu</div>
-                <img src="images/sun.png" alt="sunny" width="50px" />
+                <div class="weather-forecast-date"></div>
+                <img src="" alt="" width="50px" />
                 <div class="weather-forecast-range">
-                  <span class="max-temperature">18°</span>
-                  <span class="min-temperature">12°</span>
+                  <span class="max-temperature"></span>
+                  <span class="min-temperature"></span>
                 </div>
               </div>
             </div>
